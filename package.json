@@ -4,6 +4,9 @@
   "description": "",
   "main": "src/index.js",
   "type": "module",
+  "bin": {
+    "phpmyadmin": "src/index.js"
+  },
   "scripts": {
     "test": "",
     "preversion": "npm install && npm test"

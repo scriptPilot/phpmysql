@@ -1,19 +1,27 @@
 # PHP MySQL 
 
-Module description ...
+Provides MySQL and PHP CRUD API to your local development environment.
 
-## Prerequisites
+## Requirements
 
-- Node and Docker installed
-- Project setup with `npm create vite@latest`
+Docker and Node.js
 
 ## Installation
 
-Install the package:
+Create a new app project:
 
 ```bash
-npm i -D phpmysql
+npm create vite@latest
 ```
+
+Install this package:
+
+```bash
+npm install --save-dev phpmysql
+```
+
+
+-- to be automatized -
 
 Configure the Vite proxy:
 

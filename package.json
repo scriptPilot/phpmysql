@@ -9,7 +9,8 @@
   },
   "scripts": {
     "test": "",
-    "preversion": "npm install && npm test"
+    "preversion": "npm install && npm test",
+    "postinstall": "src/postinstall.js"
   },
   "repository": {
     "type": "git",

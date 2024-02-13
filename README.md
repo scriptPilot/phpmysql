@@ -2,6 +2,11 @@
 
 Module description ...
 
+## Prerequisites
+
+- Node and Docker installed
+- Project setup with `npm create vite@latest`
+
 ## Installation
 
 Install the package:
@@ -15,7 +20,8 @@ Configure the Vite proxy:
 ```js
 server: {
   proxy: {
-    '^(.+)\.(php)(?:[\?#]|$)': 'http://localhost:8000/' // eslint-disable-line no-useless-escape
+    // eslint-disable-next-line no-useless-escape
+    '^(.+)\.(php)(?:[\?#]|$)': 'http://localhost:8000/'
   }
 }
 ```

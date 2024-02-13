@@ -1,3 +1,5 @@
+import { version } from '../package.json'
+
 export default () => {
-  console.log('Hello World')
+  console.log(`Hello World v${version}`)
 }

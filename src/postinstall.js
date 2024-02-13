@@ -1,10 +1,18 @@
+#!/usr/bin/env node
+
 import path from 'path'
 import fs from 'fs'
 
-const indexPHPFile = path.resolve('../../../public/index.php')
+let isInstalled = false
+try {
+  isInstalled = fs.existsSync(path.resolve('../../../package.json'))
+} catch {}
 
-if (!fs.existsSync(indexPHPFile)) {
+console.log(isInstalled ? 'yes' : 'no')
 
-  fs.writeFileSync(indexPHPFile, '<?php\n\nphpinfo();')
-
+if (isInstalled) {
+  const indexPHPFile = path.resolve('../../../public/index.php')
+  if (!fs.existsSync(indexPHPFile)) {
+    fs.writeFileSync(indexPHPFile, '<?php\n\nphpinfo();')
+  }
 }

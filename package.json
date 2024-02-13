@@ -1,0 +1,17 @@
+{
+  "name": "phpmysql",
+  "version": "0.0.1",
+  "description": "",
+  "main": "src/index.js",
+  "type": "module",
+  "scripts": {
+    "test": "",
+    "preversion": "npm install && npm test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/scriptpilot/phpmysql.git"
+  },
+  "author": "scriptPilot <mail@scriptPilot.de>",
+  "license": "MIT"
+}

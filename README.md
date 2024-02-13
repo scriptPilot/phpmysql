@@ -4,7 +4,22 @@ Module description ...
 
 ## Installation
 
-`npm i -D phpmysql`
+Install the package:
+
+```bash
+npm i -D phpmysql
+```
+
+Configure the Vite proxy:
+
+```js
+server: {
+  proxy: {
+    '^(.+)\.(php)(?:[\?#]|$)': 'http://localhost:8000/' // eslint-disable-line no-useless-escape
+  }
+}
+```
+
 
 ## Usage
 

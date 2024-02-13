@@ -4,7 +4,7 @@ Module description ...
 
 ## Installation
 
-Module installation ...
+`npm i -D phpmysql`
 
 ## Usage
 

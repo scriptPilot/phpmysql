@@ -1,5 +1,5 @@
 # Use Apache PHP as base image
-FROM php:apache
+FROM php:8.2-apache
 
 # Install Zip, Unzip and Git (required by Composer)
 Run apt-get update && apt-get install -y zip

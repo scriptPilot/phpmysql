@@ -44,3 +44,6 @@ Module usage ...
 - Commit changes with issue reference
 - Run `npm version patch | minor | major` and push changes
 - Let the workflow manage the release to GitHub and NPM
+
+
+docker stop $(docker ps -a -q) && docker rm -f $(docker ps -a -q) && docker volume rm $(docker volume ls -q)

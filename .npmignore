@@ -1,4 +1,5 @@
 *
-!/src/
+!/templates/
+!/index.js
 !/package.json
 !/README.md

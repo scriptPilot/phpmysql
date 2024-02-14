@@ -8,7 +8,7 @@ use Tqdev\PhpCrudApi\ResponseUtils;
 require('vendor/autoload.php');
 
 // Credentials
-include('credentials.php');
+@include('credentials.php');
 
 // Configuration
 $config = new Config([
@@ -17,10 +17,10 @@ $config = new Config([
     'debug' => MYSQL_DATABASE === 'development',
 
     // Database
-    'address' => MYSQL_HOST,
-    'database' => MYSQL_DATABASE,
-    'username' => MYSQL_USERNAME,
-    'password' => MYSQL_PASSWORD
+    'address' => MYSQL_HOST ?? 'mysql',
+    'database' => MYSQL_DATABASE ?? 'development',
+    'username' => MYSQL_USERNAME ?? 'root',
+    'password' => MYSQL_PASSWORD ?? 'root'
     
 ]);
 
